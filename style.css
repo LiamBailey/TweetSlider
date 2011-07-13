@@ -1,0 +1,70 @@
+/*
+    Document   : style
+    Created on : 11-Jun-2011, 20:32:48
+    Author     : See This Now Media
+    Description:
+        Purpose of the stylesheet follows.
+*/
+.tweet_slider {
+overflow:hidden !important;
+position:relative;
+margin:10px 0;
+padding:0;
+}
+
+.tweet_slider h4 {
+text-align:left;
+margin:10px 0;
+padding:0
+}
+
+.tweet_slider ul {
+list-style:none;
+margin:0;
+padding:0;
+position:relative;
+}
+
+.tweet_slider ul li {
+margin:0;
+padding:0;
+float:left;
+position:relative;
+left:0;
+}
+
+a.nextButton {
+    clear:both;
+   float:right;
+    display:block;
+    width:27px;
+    height:24px;
+    line-height:24px;
+    background:url("10.jpg") center right;
+}
+
+.controls {
+    line-height:24px;
+    height: 24px;
+}
+
+a.prevButton {
+    float:left;
+    display:block;
+    width:27px;
+    height:24px;
+    line-height:24px;
+    background:url("11.jpg") center left;
+}
+
+.tweet_slider ul li div, .tweet_slider ul li div span {
+width:auto;
+text-align:left;
+margin:0 auto;
+}
+
+.tweet_slider ul li img {
+padding-right:2px
+
+}
+
