@@ -1,6 +1,12 @@
-Tweet Slider V2 is now a lightweight jQuery plugin.
+Tweet Slider V2.2 is now a lightweight jQuery plugin.
 
-It has the following new features:
+V2.2 Changelog:
+
+Fixes style problems
+Adds clickable links to tweets
+Adds fading effect when refreshing tweets
+
+It has the following features:
 
 Auto-Refresh: Tweet Slider V1 would load the latest tweets for the given user once per page load, meaning it would not pick up new Tweets without refreshing the page. Tweet Slider v2.1 automatically refreshes asynchronously (without reloading the page) every 10 minutes (the time can be changed by the user, but this will be covered in the options section).
 
