@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript Development Environment</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+         <script src="jquery.tweetslider.js" type="text/javascript"></script>
+         <link rel="stylesheet" href="style.css" />
+        <script type="text/javascript">
+            jQuery(document).ready(function() {
+    jQuery(".tweeterama").tweetSlider({
+    username: "Twitter",
+		refreshTime: 50000
+    });
+    })
+        </script>
+    </head>
+    <body>
+
+        <div class="tweeterama"></div>
+
+<input type='text' id='query'>
+<div id="results"></div>
+
+    </body>
+</html>
