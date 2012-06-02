@@ -1,21 +1,23 @@
-Tweet Slider V2.2 is now a lightweight jQuery plugin.
+Tweet Slider V2.5
 
-V2.2 Changelog:
+V2.5 Changelog:
 
-Fixes style problems
-Adds clickable links to tweets
-Adds fading effect when refreshing tweets
+Adds support for Twitter Entities, for urls, hashtags and user_mentions, including hyperlinks for each.
+Adds option to pull in tweets for a hashtag search or a username -- changes in options below.
 
-It has the following features:
+Tweet Slider is what you'd expect; it pulls in latest tweets from Twitter and displays them in a configurable
+slider. It also has the following features:
 
-Auto-Refresh: Tweet Slider V1 would load the latest tweets for the given user once per page load, meaning it would not pick up new Tweets without refreshing the page. Tweet Slider v2.1 automatically refreshes asynchronously (without reloading the page) every 10 minutes (the time can be changed by the user, but this will be covered in the options section).
+Auto-Refresh: Goes back for more tweets at a configurable interval.
 
-Manual Slide: In Tweet Slider v2.1 we have added next and previous buttons to manually slide the tweets.
+Manual Slide
+
 Plugin Options:
 
 As everyone who uses jQuery plugins will know they most often come with a set of options that you can change to make the plugin work how you like. Like the lightweight and simple nature of Tweet Slider the options are also a simple bunch.
 
-username - the username who's tweets to pull in - default: 'Twitter'
+username: - the username who's tweets to pull in - default: ''
+hash: - Defaults to Twitter. Setting a username will override the hash and display the user's tweets
 slides - Number of Tweets to display - default: 5
 width - Width of slider - default: 500
 speed -	Speed of sliding animation - default: ‘slow’ (accepts 'slow','medium','fast', or milliseconds as int)
@@ -40,8 +42,8 @@ And call it like so
 <script type="text/javascript">
 $(document).ready(function() {
 $("#tweets").tweetSlider({
-username: ‘yourusername’
-
+//set options here in option:value format i.e
+hash: 'mysearch'
 })
 })
 
