@@ -1,16 +1,32 @@
-Tweet Slider V2.5
+Tweet Slider V3
 
-V2.5 Changelog:
+Tweet Slider is what you'd expect; it pulls in latest tweets from Twitter and displays them in a configurable
+slider.
+
+V3 Changelog:
+
+*NEW FEATURE* PHP Caching: The Plugin now calls get_tweets.php which is part of the package. It should be added to the same 
+directory as all other files. PHP also must be able to write this folder as it creates the directory and files for caching. 
+This also fixes the issue raised on Git by lmorgan69a, which was reported as ie9 crashing, but was actually the auto-refresh 
+(see below) failing to bring in new tweets because the Twitter API limit had been reached. This only happened when the auto-
+refresh delay was set to short and making more than 150 requests to API per hour. Now the plugin's PHP caching feature keeps a 
+cache and counts requests, if/when the limit is reached, or if the API request fails for any reason it uses the cached tweets.
+
+NOTE: I have built my own system for counting requests, then I realised that the number of requests left before hitting the limit
+is sent back from Twitter in the Header of the response. And that Twitter also sends a 420 response code when the limit is reached.
+V3.1 will soon be released getting rid of its own counter, and using one or both of the above methods to prevent problems with rate
+limiting.
+
+V2.5 Changelog
 
 Adds support for Twitter Entities, for urls, hashtags and user_mentions, including hyperlinks for each.
 Adds option to pull in tweets for a hashtag search or a username -- changes in options below.
 
-Tweet Slider is what you'd expect; it pulls in latest tweets from Twitter and displays them in a configurable
-slider. It also has the following features:
+V2 Changelog:
 
 Auto-Refresh: Goes back for more tweets at a configurable interval.
 
-Manual Slide
+Manual Slide: buttons to slide tweets manually
 
 Plugin Options:
 
