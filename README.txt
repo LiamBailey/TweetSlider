@@ -1,7 +1,6 @@
 Tweet Slider V3
 
-Tweet Slider is what you'd expect; it pulls in latest tweets from Twitter and displays them in a configurable
-slider.
+Tweet Slider is what you'd expect; it pulls in latest tweets from Twitter and displays them in a configurable slider.
 
 V3 Changelog:
 
