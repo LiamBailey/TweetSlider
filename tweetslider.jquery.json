@@ -1,0 +1,27 @@
+{
+    "name": "tweetslider",
+    "title": "jQuery TweetSlider",
+    "description": "jQuery plugin to create a slider of tweets, by username or hashtag search.",
+    "keywords": [
+        "twitter",
+        "sliders",
+        "tweets"
+    ],
+    "version": "3.0.0",
+    "author": {
+        "name": "Liam Bailey",
+        "url": "http://smallcoders.com/"
+    },
+    "licenses": [
+    {
+        "type": "GPLv2",
+        "url": "www.gnu.org/licenses/gpl-2.0.html"
+    }
+	],
+    "homepage": "http://smallcoders.com/project/tweetslider/",
+    "docs": "https://github.com/LiamBailey/TweetSlider",
+    "download": "http://smallcoders.com/?download=tweetslider",
+    "dependencies": {
+        "jquery": ">=1.5"
+    }
+}
