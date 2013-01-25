@@ -7,7 +7,7 @@
         "sliders",
         "tweets"
     ],
-    "version": "3.0.0",
+    "version": "3.0.1",
     "author": {
         "name": "Liam Bailey",
         "url": "http://smallcoders.com/"
@@ -15,7 +15,7 @@
     "licenses": [
     {
         "type": "GPLv2",
-        "url": "www.gnu.org/licenses/gpl-2.0.html"
+        "url": "http://www.gnu.org/licenses/gpl-2.0.html"
     }
 	],
     "homepage": "http://smallcoders.com/project/tweetslider/",
